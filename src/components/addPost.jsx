@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
+import PageHeader from '../components/layout/pageHeader'
+
 
 export default class addPosts extends Component {
+  state = {
+    title : 'Add New Post',
+};
   render() {
     return (
-      <div>
-        <h4>Hello add posts !</h4>
-      </div>
+      <React.Fragment>
+            <PageHeader title={this.state.title}></PageHeader>
+      </React.Fragment>
     )
   }
 }

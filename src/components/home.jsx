@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
+import PageHeader from '../components/layout/pageHeader'
 
 export default class home extends Component {
-  render() {
+    
+    state = {
+        title : 'HomePage'
+    };
+    render() {
     return (
-      <div>
-        <h4>Hello Home !</h4>
-      </div>
+      <React.Fragment>
+            <PageHeader title={this.state.title}></PageHeader>
+      </React.Fragment>
     )
   }
 }
+
+
+
