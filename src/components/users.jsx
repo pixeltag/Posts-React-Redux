@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import PageHeader from './layout/pageHeader'
-import axios from 'axios'
+import Axios from 'axios'
 import GridItem from './items/gridItem'
 
 export default class users extends Component {
 
   constructor(props) {
     super(props)
-    axios.get('https://jsonplaceholder.typicode.com/users')
+    Axios.get('https://jsonplaceholder.typicode.com/users')
     .then(response => {
       this.setState({users : response.data})
     })
